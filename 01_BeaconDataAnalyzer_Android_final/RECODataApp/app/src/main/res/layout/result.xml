@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/resultUUIDTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#ff000000"/>
+    
+    <TextView
+        android:id="@+id/resultMajorMinorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ff000000"/>
+
+
+
+    <TextView
+        android:id="@+id/resultD2ExTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="2m : d0 / RSSI0 / Xg / n"/>
+
+    <TextView
+        android:id="@+id/resultD2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#ff000000"/>
+
+    <TextView
+        android:id="@+id/resultD3ExTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="3m : d0 / RSSI0 / Xg / n"/>
+
+    <TextView
+        android:id="@+id/resultD3TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#ff000000"/>
+
+    <TextView
+        android:id="@+id/resultRangeExTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Range 1/2/3/4"/>
+
+    <TextView
+        android:id="@+id/resultRangeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#ff000000"/>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="beacon.etri.dku.com.etribeaconreco" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="User Positioning in Museum"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="beacon.etri.dku.com.etribeaconreco.view.MenuActivity"
+            android:label="User Positioning in Museum">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.UserPositioningActivity"
+            android:label="Indoor Positioning" >
+        </activity>
+        <activity android:name=".view.UserFaveUpdateActivity"
+            android:label="Contents Setting">
+        </activity>
+        <activity android:name=".view.GridSettingActivity"
+            android:label="Grid Setting">
+        </activity>
+        <service android:name=".view.StepCounterService"/>
+
+        <service android:name="com.perples.recosdk.RECOBeaconService" />
+
+    </application>
+
+</manifest>

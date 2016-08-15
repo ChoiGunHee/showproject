@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffeae6ff"
+        android:layout_alignBottom="@+id/portTextView"
+        android:layout_marginBottom="-30dp"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffeae6ff"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignBottom="@+id/mionrTextView"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginTop="-5dp"></FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Setting"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#ff000000"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <TextView android:text="IP" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/ipTextView"
+        android:textSize="15dp"
+        android:textColor="#ff000000" />
+
+    <EditText android:text="220.149.230.119" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipEditText"
+        android:textSize="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="30dp"
+        android:width="200dp"
+        android:background="#ffffffff"
+        android:height="20dp" />
+
+    <TextView android:text="Port" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/portTextView"
+        android:layout_marginLeft="47dp"
+        android:textSize="15dp"
+        android:textColor="#ff000000" />
+
+    <EditText android:text="34696" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portEditText"
+        android:textSize="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="30dp"
+        android:width="100dp"
+        android:background="#ffffffff"
+        android:height="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONNECT"
+        android:id="@+id/connectButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="15dp"
+        android:onClick="send"
+        android:enabled="true"
+        android:background="#ffffce94" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:id="@+id/resetButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="180dp"
+        android:textSize="15dp"
+        android:onClick="close"
+        android:enabled="false"
+        android:background="#ffffce94" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beacon Setting"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#ff000000"
+        android:textStyle="bold"
+        android:layout_marginTop="230dp" />
+
+    <TextView android:text="UUID" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="260dp"
+        android:id="@+id/uuidTextView"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#ff000000" />
+
+    <EditText android:text="50ddf411-8cf1-440c-87cd-e368daf9c93e" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uuidEditText"
+        android:textSize="12dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="30dp"
+        android:width="240dp"
+        android:background="#ffffffff"
+        android:height="20dp" />
+
+    <TextView android:text="Major" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="300dp"
+        android:id="@+id/majorTextView"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#ff000000" />
+
+    <EditText android:text="" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/majorEditText"
+        android:textSize="15dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="30dp"
+        android:width="100dp"
+        android:background="#ffffffff"
+        android:height="20dp" />
+
+    <TextView android:text="Minor" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="340dp"
+        android:id="@+id/mionrTextView"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#ff000000" />
+
+    <EditText android:text="" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minorEditText"
+        android:textSize="15dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="30dp"
+        android:width="100dp"
+        android:background="#ffffffff"
+        android:height="20dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2m"
+        android:id="@+id/meter2Button"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:onClick="collectStart"
+        android:enabled="false"
+        android:background="#ffffef6a" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3m"
+        android:id="@+id/meter3Button"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="130dp"
+        android:textSize="15dp"
+        android:onClick="collectStart"
+        android:enabled="false"
+        android:background="#ffffef6a" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/resultViewButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="230dp"
+        android:textSize="15dp"
+        android:onClick="showResult"
+        android:enabled="false"
+        android:background="#ff9eccff" />
+
+    <TextView android:text="" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="470dp"
+        android:id="@+id/countTextView"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:textColor="#ff000000"/>
+
+
+</RelativeLayout>
